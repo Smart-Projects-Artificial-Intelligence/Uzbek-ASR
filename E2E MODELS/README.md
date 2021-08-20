@@ -34,7 +34,7 @@ The directory for running the experiments (`Uzbek-ASR/<exp-name`) can be created
  
 Download [USC dataset](https://usc.spai.uz/en) and untar in the directory of your choice. Specify the path to the data in  `./run.sh` script:
 ```
-dataset_dir=/path-to/TUIT_USC
+dataset_dir=/path-to/SPAI_USC
 ```
 
 ## Training
