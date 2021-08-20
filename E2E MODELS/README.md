@@ -5,7 +5,7 @@ This repository provides the recipe for the paper [USC: An Open-Source Uzbek Spe
 
 ## Authors
 
-The Uzbek speech corpus (USC) has been developed in academic collaboration between Image and Speech Processing Laboratory, Department of Computer Systems, [TUIT](https://tuit.uz/en/kompyuter-tizimlari) and [Institute of Smart Systems and Artificial Intelligence]( https://issai.nu.edu.kz). 
+The Uzbek speech corpus (USC) has been developed in academic collaboration between Image and Speech Processing Laboratory, Department of Computer Systems, [TUIT](https://tuit.uz/en/kompyuter-tizimlari) and [ISSAI]( https://issai.nu.edu.kz). 
 
 **Authors:**
 - Muhammadjon Musaev;
@@ -34,7 +34,7 @@ The directory for running the experiments (`Uzbek_ASR/<exp-name`) can be created
  
 Download [USC dataset](https://issai.nu.edu.kz/uzbek-asr/) and untar in the directory of your choice. Specify the path to the data in  `./run.sh` script:
 ```
-dataset_dir=/path-to/ISSAI_USC
+dataset_dir=/path-to/TUIT_ISSAI_USC
 ```
 
 ## Training
