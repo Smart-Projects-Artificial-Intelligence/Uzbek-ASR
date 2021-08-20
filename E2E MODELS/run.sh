@@ -21,16 +21,16 @@ resume= # Resume the training from snapshot
 # feature configuration
 do_delta=false
 
-dataset_dir='/path/ISSAI_USC/'
+dataset_dir='/path/TUIT_ISSAI_USC/'
 
 train_file=
 dev_file=
 test_file=
 
 preprocess_config= #conf/specaug.yaml #uncomment if using specaugment
-train_config=conf/train_pytorch_conformer_lr5.yaml
-lm_config=conf/lm.yaml
-decode_config=conf/decode_transformer.yaml
+train_config=E2E MODELS/E2E-Conformer/train_pytorch_conformer_lr5.yaml
+lm_config=E2E MODELS/RNN-LM/lm.yaml
+decode_config=E2E MODELS/E2E-Conformer/decode_transformer.yaml
 
 # rnnlm related
 use_lm=true
