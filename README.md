@@ -1,2 +1,2 @@
 # Uzbek-ASR
-Automatic Uzbek Speech Recognition
+Automatic Recognition of Uzbek Speech
