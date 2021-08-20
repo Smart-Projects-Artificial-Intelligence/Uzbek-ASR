@@ -1,11 +1,11 @@
-# Uzbek_ASR
+# Uzbek-ASR
 
 
 This repository provides the recipe for the paper [USC: An Open-Source Uzbek Speech Corpus](https://arxiv.org/abs/2107.14419).
 
 ## Authors
 
-The Uzbek speech corpus (USC) has been developed in academic collaboration between ISSAI and [Image and Speech Processing Laboratory, Department of Computer Systems, TUIT](https://tuit.uz/en/kompyuter-tizimlari). 
+The Uzbek speech corpus (USC) has been developed in academic collaboration between Image and Speech Processing Laboratory, Department of Computer Systems, [TUIT](https://tuit.uz/en/kompyuter-tizimlari) and [ISSAI]( https://issai.nu.edu.kz). 
 
 **Authors:**
 - Muhammadjon Musaev;
@@ -19,12 +19,12 @@ The Uzbek speech corpus (USC) has been developed in academic collaboration betwe
 
 Our code builds upon [ESPnet](https://github.com/espnet/espnet), and requires prior installation of the framework. Please follow the [installation guide](https://espnet.github.io/espnet/installation.html) and put the repository inside `espnet/egs/` directory.
 
-After succesfull installation of ESPnet & Kaldi, go to `Uzbek_ASR/asr1` directory and create links to the dependencies:
+After succesfull installation of ESPnet & Kaldi, go to `Uzbek-ASR/asr1` directory and create links to the dependencies:
 ```
 ln -s ../../../tools/kaldi/egs/wsj/s5/steps steps
 ln -s ../../../tools/kaldi/egs/wsj/s5/utils utils
 ```
-The directory for running the experiments (`Uzbek_ASR/<exp-name`) can be created by running the following script:
+The directory for running the experiments (`Uzbek-ASR/<exp-name`) can be created by running the following script:
 
 ```
 ./setup_experiment.sh <exp-name>
@@ -32,18 +32,18 @@ The directory for running the experiments (`Uzbek_ASR/<exp-name`) can be created
 
 ## Downloading the dataset
  
-Download [USC dataset](https://issai.nu.edu.kz/uzbek-asr/) and untar in the directory of your choice. Specify the path to the data in  `./run.sh` script:
+Download [USC dataset](https://usc.spai.uz/en) and untar in the directory of your choice. Specify the path to the data in  `./run.sh` script:
 ```
-dataset_dir=/path-to/ISSAI_USC
+dataset_dir=/path-to/SPAI_USC
 ```
 
 ## Training
 
-To train the models, run the script `./run.sh` inside `Uzbek_ASR/<exp-name>/` folder.
+To train the models, run the script `./run.sh` inside `Uzbek-ASR/<exp-name>/` folder.
 
 ## Pre-trained model
 
-You can find the link to the latest pre-trained [Conformer model](https://issai.nu.edu.kz/wp-content/uploads/2021/07/model.tar.gz). Untar it in `Uzbek_ASR/<exp-name>/`. 
+You can find the link to the latest pre-trained [Conformer model](https://usc.spai.uz/en). Untar it in `Uzbek-ASR/<exp-name>/`. 
 
 ## Inference
 To decode a single audio, specify paths to the following files inside `recog_wav.sh` script:
